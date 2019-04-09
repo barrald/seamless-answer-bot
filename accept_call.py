@@ -30,5 +30,9 @@ def answer_call():
 
 	return str(resp)
 
+@app.route("/")
+def home_page():
+	return str("home!")
+
 if __name__ == "__main__":
 	app.run(debug=True)
