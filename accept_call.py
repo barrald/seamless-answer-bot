@@ -27,7 +27,7 @@ def answer_call():
 
 	resp = VoiceResponse()
 
-	resp.say("Hi, there", voice='male')
+	resp.say("Hi!", voice='male')
 	resp.pause(length=1)
 	resp.say("Please leave the food on the table, thanks!", voice='male')
 	resp.pause(length=3)
