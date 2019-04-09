@@ -27,9 +27,11 @@ def answer_call():
 
 	resp = VoiceResponse()
 
-	resp.say("Hi, please leave it on the table, thanks!", voice='male')
+	resp.say("Hi, there", voice='male')
+	resp.pause(length=1)
+	resp.say("Please leave the food on the table, thanks!", voice='male')
 	resp.pause(length=3)
-	resp.say("Please leave it on the table on the fourth floor, thanks!", voice='male')
+	resp.say("Thanks, just leave the food on the table on the fourth floor!", voice='male')
 	resp.pause(length=3)
 	resp.say("Yes, just leave it on the table on the fourth floor, thanks!", voice='male')
 
@@ -40,4 +42,4 @@ def home_page():
 	return 'Hello World!'
 
 if __name__ == "__main__":
-	app.run(debug=True)
+	app.run(debug=False)
