@@ -2,6 +2,7 @@ from flask import Flask
 from twilio.twiml.voice_response import VoiceResponse
 from twilio.twiml.messaging_response import MessagingResponse
 from twilio.rest import Client
+import os
 
 to_number = os.environ.get('to_number')
 from_number = os.environ.get('from_number')
