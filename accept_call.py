@@ -29,9 +29,9 @@ def answer_call():
 
 	resp.say("Hi, please leave it on the table, thanks!", voice='male')
 	resp.pause(length=3)
-	resp.say("Please leave it on the table, thanks!", voice='male')
+	resp.say("Please leave it on the table on the fourth floor, thanks!", voice='male')
 	resp.pause(length=3)
-	resp.say("Please leave it on the table, thanks!", voice='male')
+	resp.say("Yes, just leave it on the table on the fourth floor, thanks!", voice='male')
 
 	return str(resp)
 
